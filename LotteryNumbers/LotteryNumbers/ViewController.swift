@@ -66,8 +66,38 @@ class ViewController: UIViewController {
         numSix.text = ""
         numSeven.text = ""
     }
-    // Functino added to viewDidLoad to start empty.
+    // Function added to viewDidLoad to start empty.
     @IBAction func clearAll(_ sender: Any) {
         clean()
+    }
+    
+    // Generating the draw
+    func randomInt(max: Int) -> Int{
+        let rand:Int = Int(arc4random())
+        return (rand % max) + 1
+    }
+    func randomNum() -> Int {
+        let max: Int = 50
+        let random = randomInt(max: max)
+        return random
+    }
+    
+    
+    @IBAction func generate(_ sender: Any) {
+        var lottoNum = [0,0,0,0,0,0,0]
+        
+        // Populating array index with random numbers
+        for i in 0...6 {
+            lottoNum[i] = randomNum()
+         }
+        
+        // Displaying the generated numbers
+        numOne.text = String(lottoNum[0])
+        numTwo.text = String(lottoNum[1])
+        numThree.text = String(lottoNum[2])
+        numFour.text = String(lottoNum[3])
+        numFive.text = String(lottoNum[4])
+        numSix.text = String(lottoNum[5])
+        numSeven.text = String(lottoNum[6])
     }
 }
