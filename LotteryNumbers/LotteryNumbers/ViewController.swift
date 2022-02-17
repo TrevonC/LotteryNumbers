@@ -21,12 +21,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         header()
         number()
+        clean()
         // Do any additional setup after loading the view.
     }
     
     @IBOutlet weak var headerView: UIView!
     
-    // numbersView Styling/Shadow
+    
+    // numbersView Styling/Shadow.
     @IBOutlet weak var numbersView: UIView!
     func header(){
         numbersView.layer.shadowOpacity = 0.5
@@ -52,5 +54,20 @@ class ViewController: UIViewController {
         numSix.layer.cornerRadius = 12
         numSeven.layer.masksToBounds = true
         numSeven.layer.cornerRadius = 12
+    }
+    
+    // Clear all numbers generated "" Blank to display empty.
+    func clean(){
+        numOne.text = ""
+        numTwo.text = ""
+        numThree.text = ""
+        numFour.text = ""
+        numFive.text = ""
+        numSix.text = ""
+        numSeven.text = ""
+    }
+    // Functino added to viewDidLoad to start empty.
+    @IBAction func clearAll(_ sender: Any) {
+        clean()
     }
 }

@@ -113,6 +113,21 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRA-at-DdE">
+                                        <rect key="frame" x="135" y="448" width="145" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Clear"/>
+                                        <connections>
+                                            <action selector="clearAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nta-7o-Cd4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvE-bQ-akT">
+                                        <rect key="frame" x="41" y="386" width="332" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Get Lucky!"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -121,7 +136,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="headerView" destination="YAJ-d4-Bvc" id="1YJ-AJ-u5U"/>
+                        <outlet property="headerView" destination="YAJ-d4-Bvc" id="qgN-pe-4zr"/>
                         <outlet property="numFive" destination="KRs-5B-gtK" id="iPp-OS-Jsh"/>
                         <outlet property="numFour" destination="QS6-l2-Zxh" id="ilA-fF-Oip"/>
                         <outlet property="numOne" destination="zu1-3b-xek" id="LV6-tk-bcg"/>
